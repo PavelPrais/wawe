@@ -71,6 +71,32 @@ body {
   margin: 0 auto;
 }
 
+.section {
+  background-color: #fff;
+  padding: 200px 0 200px;
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.6px;
+  text-align: center;
+  color: #01353E;
+  position: relative;
+}
+
+.title::after {
+  content: "/";
+  position: absolute;
+  width: 48px;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 85px;
+  color: #00B2A0;
+}
+
 .header {
   background-image: url('../images/header-bg.jpg');
   background-repeat: no-repeat;
@@ -142,3 +168,30 @@ body {
 .header__icon {
   margin-bottom: 92px;
 }
+
+.about {
+  padding: 192px 0 160px;
+}
+
+.about__inner {
+  margin-top: 93px;
+  display: flex;
+}
+
+.about__text-left {
+  margin-right: 120px;
+}
+
+.about__text-left, .about__text-right {
+  max-width: 480px;
+  max-height: 452px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about__text-left p, .about__text-right p {
+  margin-bottom: 30px;
+  letter-spacing: 0.6px;
+}
+
